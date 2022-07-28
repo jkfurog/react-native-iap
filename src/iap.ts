@@ -326,6 +326,7 @@ export const requestSubscription = (
   prorationModeAndroid: ProrationModesAndroid = -1,
   obfuscatedAccountIdAndroid: string | undefined = undefined,
   obfuscatedProfileIdAndroid: string | undefined = undefined,
+  selectedOfferIndexAndroid: string | undefined = undefined
 ): Promise<SubscriptionPurchase | null> =>
   (
     Platform.select({
@@ -351,6 +352,7 @@ export const requestSubscription = (
           prorationModeAndroid,
           obfuscatedAccountIdAndroid,
           obfuscatedProfileIdAndroid,
+          selectedOfferIndexAndroid
         );
       },
     }) || Promise.resolve
