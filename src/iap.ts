@@ -38,7 +38,7 @@ export const getInstallSourceAndroid = (): InstallSourceAndroid => {
 /**
  * Defaulting to V4 to minimize migration, it'll eventually be changed to default to V5
  */
-let androidNativeModule = RNIapModuleV4;
+let androidNativeModule = RNIapModule;
 
 const setAndroidNativeModule = (
   nativeModule: typeof RNIapModule | typeof RNIapModuleV4,
